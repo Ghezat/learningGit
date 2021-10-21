@@ -8,8 +8,9 @@
     <style type="text/css">
         form { background-color: black; color: green; font-family: Verdana; width: 50%; }
         legend {color: brown; }
-        input   {background-color: black; color: crimson;}
+        input   {background-color: black; color: crimson; width: 230px;}
         fieldset { border: 1px ridge brown;}
+        p { color: goldenrod;}
       </style>
 </head>
 <body>
@@ -50,19 +51,53 @@
 
             <label for="confLo">comando:</label>
             <input type="text" placeholder= "git log --oneline" id="confLo">
-            <label for=""><small> visualizar los log (version corta)</small></label> <br> <hr>
+            <label for=""><small> visualizar los log (version corta)</small></label> <br> 
 
             <label for="confQ">comando:</label>
             <input type="text" placeholder= "git diff" id="confQ">
-            <label for=""><small> para volver al comando de git se usa Shift + Q</small></label> <br> <br> <hr>
+            <label for=""><small> para volver al comando de git se usa Shift + Q</small></label> <br> <br> 
 
         </fieldset> <br>
         <fieldset>
+
             <legend>checkout</legend>
             <label for="confLg">comando:</label>
             <input type="text" placeholder= "git checkout hash" id="confLg">
-            <label for=""><small> puedes moverte en el tiempo con cada log (es lo mas cercano a los viajes en el tiempo que tendras)</small></label> <br> <br> <hr>
-            fin
+            <label for=""><small> puedes moverte en el tiempo con cada log (es lo mas cercano a los viajes en el tiempo que tendras)</small></label> <br> <br> 
+        
+        </fieldset> <br>
+
+        <fieldset>
+
+            <legend>remote</legend>
+            <label for="commRe">comando:</label>
+            <input type="text" placeholder= "git remote add origin 'direccion'" id="commRe">
+            <label for=""><small> comando para conectar nuestroarchivo local con nuestro repositorio Github (nube)</small></label> <br>
+
+        </fieldset> <br>
+
+        <fieldset>
+
+            <legend>push & pull</legend>
+            <label for="commPh">comando:</label>
+            <input type="text" placeholder= "git push origin master" id="commPh">
+            <label for=""><small> comando para subir a Github (nube)</small></label> <br>
+
+            <label for="commPl">comando:</label>
+            <input type="text" placeholder= "git pull origin master" id="commPl">
+            <label for=""><small> comando para traer de Github (nube) a tu puesto local de trabajo</small></label> <br>
+
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>note</legend>
+            <small>
+            <p>•    Hay tres secciones importantes |working directory | staging area | repositorio local. 
+            </p>
+            <p>•   Al tener todos los cambios en el repositrio local puedes subirlo al repositorio final (nube).</p>
+            <p>•   Recordar que para subir al repositorio nube Github se debe primero hacer un "remote" para coenctar con el respositorio destino.</p>
+            </small>
+            <br> <hr>
         </fieldset>
 
     </form>
