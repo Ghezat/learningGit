@@ -6,25 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
-        form { color: black; font-family: Verdana; width: 40%; }
+        form { color: black; font-family: Verdana; width: 50%; }
       </style>
 </head>
 <body>
     <form action="">   
         <fieldset>
             <legend>version 1</legend>
-            <p>inicializo git</p>
+            <p>Trabajando con git</p>
             <label for="init">comando:</label>
-            <input type="text" placeholder="git init" id="init"> <br>
+            <input type="text" placeholder="git init" id="init">
+            <label for=""><small> inicializando git</small></label> <br>
             <label for="confN">comando:</label>
             <input type="text" placeholder= "git config --global user.name" id="confN"> 
             <label for=""><small> configuro mi perfil con mi user </small></label> <br>
             <label for="confE">comando:</label>
             <input type="text" placeholder= "git config --global user.email" id="confE">
             <label for=""><small> configuro mi perfil con mi correo </small></label> <br> <hr>
+            <label for="confS">comando:</label>
+            <input type="text" placeholder= "git status" id="confS">
+            <label for=""><small> ver el status de los cambios en mi dir. de trabajo </small></label> <br>
             <label for="confE">comando:</label>
             <input type="text" placeholder= "git add ." id="confE">
-            <label for=""><small> agregar todo al staging area </small></label> <br>
+            <label for=""><small> agregar todo al staging area </small></label> <br> <hr>
+
+            <label for="confE">comando:</label>
+            <input type="text" placeholder= "git commit -m 'version1'" id="confE">
+            <label for=""><small> haciendo un commit</small></label> <br> <hr>
+
+            <label for="confE">comando:</label>
+            <input type="text" placeholder= "git diff" id="confE">
+            <label for=""><small> ver la diferencia de un cambio en el area de trabajo</small></label> <br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>log</legend>
+            <label for="confLg">comando:</label>
+            <input type="text" placeholder= "git log" id="confLg">
+            <label for=""><small> visualizar los log (version larga)</small></label> <br>
+
+            <label for="confLo">comando:</label>
+            <input type="text" placeholder= "git log --oneline" id="confLo">
+            <label for=""><small> visualizar los log (version corta)</small></label> <br> <hr>
+
+            <label for="confQ">comando:</label>
+            <input type="text" placeholder= "git diff" id="confQ">
+            <label for=""><small> para volver al comando de git se usa Shift + Q</small></label> <br>
+
         </fieldset>
 
     </form>
